@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/6d1cab24da.js" crossorigin="anonymous"></script><!--fontawesome icone-->
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="headerHome" id="homeOhmyfood">
+        <div class="hearHome__logo">
+            <a href="#homeOhmyfood"><img src="images/ohmyfood@2x.svg" alt="logo_ohmyfood"></a>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <!--CITY SEARCH-->
+        <form class="chooseLocation" method="POST" action="debut.html">
+            <div class="chooseLocation__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <input class="chooseLocation__city" type="search" name="city" placeholder="Paris, Bellevile" >
+        </form>
+        <!--CITY SEARCH-->
+
+        <!--COMPANY PRESENTATION-->
+        <section class="containerCompanyPresention">
+            <div class="containerCompanyPresention__descriotion">
+                <h2>Réserver le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+            </div>
+            <button class="button">
+                <span class="button__text">Explorer nos restaurants</span>
+            </button>
+        </section>
+        <!--COMPANY PRESENTATION-->
+
+        <!--OPERATION-->
+        <section class="containerOperation">
+            <a href="#restaurant">
+                <div class="containerOperation__description">
+                    <span class="description__number">1</span>
+                    <i class="fas fa-mobile-alt description__icon"></i>
+                    <h4 class="description__text">Choisissez un restaurant</h4>
+                </div>
+            </a>
+            <a href="#restaurant">
+                <div class="containerOperation__description">
+                    <span class="description__number">2</span>
+                    <i class="fas fa-list-ul description__icon"></i>
+                    <h4 class="description__text">Composez votre menu</h4>
+                </div>
+            </a>
+            <a href="#restaurant">
+                <div class="containerOperation__description">
+                    <span class="description__number">3</span>
+                    <i class="fas fa-store description__icon"></i>
+                    <h4 class="description__text">Déguster au restaurant</h4>
+                </div>
+            </a>
+        </section>
+        <!--OPERATION-->
+
+        <!--RESTAURANT-->
+        <section id="restaurant" class="choiceRestaurant">
+            <header class="choiceRestaurant__header">
+                <h2>restaurant</h2>
+            </header>
+            <article class="choiceRestaurant__card">
+                <a href="index_page_laplette.html">
+                    <figure class="choiceRestaurant__cardImg">
+                        <img src="images/laPaletteDuGout.jpg" class="cardImg--dim">
+                        <figcaption>La palette du goût</figcaption>
+                    </figure>
+                    <div class="choiceRestaurant__cardContent">
+                        <p>Ménilmontant</p>
+                        <i class="fas fa-heart cardContent__health"></i>
+                    </div>
+                </a> 
+            </article>
+            <article class="choiceRestaurant__card">
+                <a href="index_page_laNote.html">
+                    <figure class="choiceRestaurant__cardImg">
+                        <img src="images/laNoteEnchantee.jpg" class="cardImg--dim">
+                        <figcaption>La note enchantée</figcaption>
+                    </figure>
+                    <div class="choiceRestaurant__cardContent">
+                        <p>Charonne</p>
+                        <i class="fas fa-heart cardContent__health"></i>
+                    </div>
+                </a>
+            </article>
+            <article class="choiceRestaurant__card">
+                <a href="index_page_aLaFrançaise.html">
+                    <figure class="choiceRestaurant__cardImg">
+                        <img src="images/aLaFrançaise.jpg" class="cardImg--dim">
+                        <figcaption>À la française</figcaption>
+                    </figure>
+                    <div class="choiceRestaurant__cardContent">
+                        <p>Cité Rouge</p>
+                        <i class="fas fa-heart cardContent__health"></i>
+                    </div>
+                </a>
+            </article>
+            <article class="choiceRestaurant__card">
+                <a href="index_page_leDelice.html">
+                    <figure class="choiceRestaurant__cardImg">
+                        <img src="images/leDeliceDesSens.jpg" class="cardImg--dim">
+                        <figcaption>Le délice des sens</figcaption>
+                    </figure>
+                    <div class="choiceRestaurant__cardContent">
+                        <p>Folie-Méricourt</p>
+                        <i class="fas fa-heart cardContent__health"></i>
+                    </div>
+                </a>
+            </article>
+        </section>
+       <!--RESTAURANT-->
+    </main>
+
+    <!--FOOTER-->
+    <footer class="ohmyfoodFooter">
+        <div class="ohmyfoodFooter__logo">
+            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood"></a>
+        </div>
+        <div class="ohmyfoodFooter__containerContent">
+            <i class="fas fa-utensils"></i>
+            <a href="index_contact.html">
+                <h3 class="cardContent--Text">Proposer un restaurant</h3>
+            </a>
+        </div>
+        <div class="ohmyfoodFooter__containerContent">
+            <i class="fas fa-hands-helping"></i>
+            <a href="index_contact.html">
+                <h3 class="cardContent--Text">Devenir partenaire</h3>
+            </a>
+        </div>
+        <a href="index_mentionsLegales.html">
+            <h3 class="cardContent--Text">Mentions légales</h3>
+        </a>
+        <a href="index_contact.html">
+            <h3 class="cardContent--Text">Contact</h3>
+        </a>
+    </footer>
+</body>
+</html>

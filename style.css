@@ -1,0 +1,7 @@
+.headerPage {
+    display: flex;
+    justify-content: center;
+}
+.headerPage__iconRetour {
+    flex-basis: 60% ;
+}
