@@ -6,6 +6,7 @@
     <title>Ohmyfood</title>
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="mobile.css">
     <script src="https://kit.fontawesome.com/6d1cab24da.js" crossorigin="anonymous"></script><!--fontawesome icone-->
 </head>
 <body>
@@ -40,6 +41,7 @@
 
         <!--OPERATION-->
         <section class="containerOperation">
+            <h2>Fonctionnement</h2>
             <a href="#restaurant">
                 <div class="containerOperation__description">
                     <span class="description__number">1</span>
@@ -67,53 +69,61 @@
         <!--RESTAURANT-->
         <section id="restaurant" class="choiceRestaurant">
             <header class="choiceRestaurant__header">
-                <h2>restaurant</h2>
+                <h2>Restaurant</h2>
             </header>
             <article class="choiceRestaurant__card">
                 <a href="index_page_laplette.html">
-                    <figure class="choiceRestaurant__cardImg">
+                    <div class="choiceRestaurant__cardImg">
                         <img src="images/laPaletteDuGout.jpg" class="cardImg--dim">
-                        <figcaption>La palette du goût</figcaption>
-                    </figure>
+                    </div>
                     <div class="choiceRestaurant__cardContent">
-                        <p>Ménilmontant</p>
-                        <i class="fas fa-heart cardContent__health"></i>
+                        <div class="cardContent__text">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <i class="far fa-heart cardContent__health"></i>
                     </div>
                 </a> 
             </article>
             <article class="choiceRestaurant__card">
                 <a href="index_page_laNote.html">
-                    <figure class="choiceRestaurant__cardImg">
+                    <div class="choiceRestaurant__cardImg">
                         <img src="images/laNoteEnchantee.jpg" class="cardImg--dim">
-                        <figcaption>La note enchantée</figcaption>
-                    </figure>
+                    </div>
                     <div class="choiceRestaurant__cardContent">
-                        <p>Charonne</p>
-                        <i class="fas fa-heart cardContent__health"></i>
+                        <div class="cardContent__text">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <i class="far fa-heart cardContent__health"></i>
                     </div>
                 </a>
             </article>
             <article class="choiceRestaurant__card">
                 <a href="index_page_aLaFrançaise.html">
-                    <figure class="choiceRestaurant__cardImg">
+                    <div class="choiceRestaurant__cardImg">
                         <img src="images/aLaFrançaise.jpg" class="cardImg--dim">
-                        <figcaption>À la française</figcaption>
-                    </figure>
+                    </div>
                     <div class="choiceRestaurant__cardContent">
-                        <p>Cité Rouge</p>
-                        <i class="fas fa-heart cardContent__health"></i>
+                        <div class="cardContent__text">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <i class="far fa-heart cardContent__health"></i>
                     </div>
                 </a>
             </article>
             <article class="choiceRestaurant__card">
                 <a href="index_page_leDelice.html">
-                    <figure class="choiceRestaurant__cardImg">
+                    <div class="choiceRestaurant__cardImg">
                         <img src="images/leDeliceDesSens.jpg" class="cardImg--dim">
-                        <figcaption>Le délice des sens</figcaption>
-                    </figure>
+                    </div>
                     <div class="choiceRestaurant__cardContent">
-                        <p>Folie-Méricourt</p>
-                        <i class="fas fa-heart cardContent__health"></i>
+                        <div class="cardContent__text">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <i class="far fa-heart cardContent__health"></i>
                     </div>
                 </a>
             </article>
@@ -123,26 +133,26 @@
 
     <!--FOOTER-->
     <footer class="ohmyfoodFooter">
-        <div class="ohmyfoodFooter__logo">
-            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood"></a>
+        <div>
+            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood" class="ohmyfoodFooter__logo"></a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-utensils"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Proposer un restaurant</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Proposer un restaurant</p>
             </a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-hands-helping"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Devenir partenaire</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Devenir partenaire</p>
             </a>
         </div>
-        <a href="index_mentionsLegales.html">
-            <h3 class="cardContent--Text">Mentions légales</h3>
+        <a class="ohmyfoodFooter__link" href="index_mentionsLegales.html">
+            <p class="ohmyfoodFooter__Content--color">Mentions légales</p>
         </a>
-        <a href="index_contact.html">
-            <h3 class="cardContent--Text">Contact</h3>
+        <a class="ohmyfoodFooter__link" href="index_contact.html">
+            <p class="ohmyfoodFooter__Content--color">Contact</p>
         </a>
     </footer>
 </body>

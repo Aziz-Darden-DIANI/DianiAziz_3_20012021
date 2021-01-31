@@ -6,6 +6,7 @@
     <title>Ohmyfood Le délice des sens</title>
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="mobile.css">
     <script src="https://kit.fontawesome.com/6d1cab24da.js" crossorigin="anonymous"></script><!--fontawesome icone-->
 </head>
 <body>
@@ -13,7 +14,7 @@
     <!--HEADER-->
     <header class="headerPage" id="homeOhmyfood">
         <a href="index_Accueil.html" class="headerPage__iconRetour">
-            <div>
+            <div class="iconRetour">
                 <i class="fas fa-arrow-left"></i>
             </div>
         </a>
@@ -25,45 +26,53 @@
     <!--MAIN-->
     <main>
         <form class="contactFormulaire" method="POST" action="debut.html">
-            <h2>Avez-vous une questions ?</h2>
-            <p>N'hésitez pas à nous contacter</p>
+            <div class="contactFormulaire__title">
+                <h2>Avez-vous une questions ?</h2>
+                <p>N'hésitez pas à nous contacter</p>
+            </div>
+
             <input type="text" class="contactFormulaire__name" name="contactFormulaire__name" placeholder="Nom" />
             <input type="email" class="contactFormulaire__email" name="contactFormulaire__email" placeholder="Email"/>
             <textarea class="contactFormulaire__message" name="contactFormulaire__massage" placeholder="Message"></textarea>
-            <input type="checkbox" class="contactFormulaire__checkbox" name="contactFormulaire__checkbox"/> 
-            <label for="RGPD">Dans le but de ma demande personnelle via le formulaire, j'accepte à ce que mes données soient utilisées afin de me recontacter.
-                <br>Vos informations ne seront en aucun cas conservées pour ds informations commerciales. 
-                Pour en savoir plus sur vos droits, consultez notre politique de protection des données personnelle.
-            </label>
-        </form>
-        <button class="buttonEmail">
-            <span class="buttonEmail__text">Envoyer</span>
-        </button>
 
+            <div class="contactFormulaire__RGPD">
+                <input type="checkbox" class="contactFormulaire__checkbox" name="contactFormulaire__checkbox"> 
+                <label for="RGPD">Dans le but de ma demande personnelle via le formulaire, j'accepte à ce que mes données soient utilisées afin de me recontacter.
+                    <br>Vos informations ne seront en aucun cas conservées pour ds informations commerciales. 
+                    Pour en savoir plus sur vos droits, consultez notre politique de protection des données personnelle.
+                </label>
+            </div>
+
+            <div class="container__buttonContact">
+                <button class="button buttonContact--width">
+                    <span class="button__text">Envoyer</span>
+                </button>
+            </div>
+        </form>
     </main>
     
      <!--FOOTER-->
      <footer class="ohmyfoodFooter">
-        <div class="ohmyfoodFooter__logo">
-            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood"></a>
+        <div>
+            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood" class="ohmyfoodFooter__logo"></a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-utensils"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Proposer un restaurant</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Proposer un restaurant</p>
             </a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-hands-helping"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Devenir partenaire</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Devenir partenaire</p>
             </a>
         </div>
-        <a href="index_mentionsLegales.html">
-            <h3 class="cardContent--Text">Mentions légales</h3>
+        <a class="ohmyfoodFooter__link" href="index_mentionsLegales.html">
+            <p class="ohmyfoodFooter__Content--color">Mentions légales</p>
         </a>
-        <a href="index_contact.html">
-            <h3 class="cardContent--Text">Contact</h3>
+        <a class="ohmyfoodFooter__link" href="index_contact.html">
+            <p class="ohmyfoodFooter__Content--color">Contact</p>
         </a>
     </footer>
 </body>

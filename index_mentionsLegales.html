@@ -6,6 +6,7 @@
     <title>Ohmyfood Le délice des sens</title>
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="mobile.css">
     <script src="https://kit.fontawesome.com/6d1cab24da.js" crossorigin="anonymous"></script><!--fontawesome icone-->
 </head>
 <body>
@@ -13,7 +14,7 @@
     <!--HEADER-->
     <header class="headerPage" id="homeOhmyfood">
         <a href="index_Accueil.html" class="headerPage__iconRetour">
-            <div>
+            <div class="iconRetour">
                 <i class="fas fa-arrow-left"></i>
             </div>
         </a>
@@ -23,7 +24,7 @@
     </header>
 
     <!--MAIN-->
-    <main>
+    <main class="main__mentionLegale">
         <h2 class="mentionLégales">Mention légales</h2>
         <h3><xstrong>Avis juridique</xstrong></h3>
         <h3><xstrong>Nom de l'entreprise</xstrong></h3>
@@ -34,7 +35,7 @@
         <p>France </p>
         <p>+33 3 21 76 90 99</p>
         <p>contact@ohmyfood.com</p>
-
+        <br>
         <h3><xstrong>Nom et coordonnées du developpeur web :</xstrong></h3>
         <p>DIANI AZIZ</p>
         <p>80000 Amiens</p>
@@ -44,26 +45,26 @@
     
      <!--FOOTER-->
      <footer class="ohmyfoodFooter">
-        <div class="ohmyfoodFooter__logo">
-            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood"></a>
+        <div>
+            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood" class="ohmyfoodFooter__logo"></a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-utensils"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Proposer un restaurant</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Proposer un restaurant</p>
             </a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-hands-helping"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Devenir partenaire</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Devenir partenaire</p>
             </a>
         </div>
-        <a href="index_mentionsLegales.html">
-            <h3 class="cardContent--Text">Mentions légales</h3>
+        <a class="ohmyfoodFooter__link" href="index_mentionsLegales.html">
+            <p class="ohmyfoodFooter__Content--color">Mentions légales</p>
         </a>
-        <a href="index_contact.html">
-            <h3 class="cardContent--Text">Contact</h3>
+        <a class="ohmyfoodFooter__link" href="index_contact.html">
+            <p class="ohmyfoodFooter__Content--color">Contact</p>
         </a>
     </footer>
 </body>

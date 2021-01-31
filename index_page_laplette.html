@@ -6,6 +6,7 @@
     <title>Ohmyfood la palette du gout</title>
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="mobile.css">
     <script src="https://kit.fontawesome.com/6d1cab24da.js" crossorigin="anonymous"></script><!--fontawesome icone-->
 </head>
 <body>
@@ -13,7 +14,7 @@
     <!--HEADER-->
     <header class="headerPage" id="homeOhmyfood">
         <a href="index_Accueil.html" class="headerPage__iconRetour">
-            <div>
+            <div class="iconRetour">
                 <i class="fas fa-arrow-left"></i>
             </div>
         </a>
@@ -23,7 +24,7 @@
     </header>
 
     <!--MAIN-->
-    <main>
+    <main class="main__background--color">
         <div class="containerImgRestaurant">
             <img src="images/laPaletteDuGout.jpg" class="containerImgRestaurant--imgDim">
         </div>
@@ -31,30 +32,30 @@
         <!--RESTAURANT-->
         <section class="cardRestaurant">
             <header class="cardRestaurant__header">
-                <h2>La palette du goût</h2>
-                <i class="fas fa-heart cardContent__health"></i>
+                <h2 class="nameRestaurant">La palette du goût</h2>
+                <i class="far fa-heart cardContent__health"></i>
             </header>
 
             <!--ENTRÉES-->
-            <article class="cardRestaurant__entries">
-                <p>ENTRÉES</p>
-                <div class="entries__content">
+            <article class="cardRestaurant__dishes">
+                <p class="cardRestaurant__borderTitlle">ENTRÉES</p>
+                <div class="dishes__content">
                     <h4>Fricassée d'escargot</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Au pimet d'espelette</p>
                         <p><strong>25€</strong></p>
                     </div>
                 </div>
-                <div class="entries__content">
+                <div class="dishes__content">
                     <h4>Foie  gras de canrde mi-cuit</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Et ses copeaux de truffe noire</p>
                         <p><strong>35€</strong></p>
                     </div>
                 </div>
-                <div class="entries__content">
+                <div class="dishes__content">
                     <h4>Oeuf au plat</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Assaisonné à la truffe sur lit de...</p>
                         <p><strong>20€</strong></p>
                     </div>
@@ -62,25 +63,25 @@
             </article>
 
              <!--PLATS-->
-            <article class="cardRestaurant__entries">
-                <p>PLATS</p>
-                <div class="entries__content">
+            <article class="cardRestaurant__dishes">
+                <p class="cardRestaurant__borderTitlle">PLATS</p>
+                <div class="dishes__content">
                     <h4>Frilet de boeuf aux herbes</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Accompagné de sa ribambelle de légumes</p>
                         <p><strong>40€</strong></p>
                     </div>
                 </div>
-                <div class="entries__content">
+                <div class="dishes__content">
                     <h4>Parmentier de queue de boeuf</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>À la truffe noire sur sa purée de panais</p>
                         <p><strong>35€</strong></p>
                     </div>
                 </div>
-                <div class="entries__content">
+                <div class="dishes__content">
                     <h4>Filet de Turbot</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Aux agrumes</p>
                         <p><strong>44€</strong></p>
                     </div>
@@ -88,60 +89,62 @@
             </article>
 
             <!--DESSERTS-->
-            <article class="cardRestaurant__entries">
-                <p>DESSERTS</p>
-                <div class="entries__content">
+            <article class="cardRestaurant__dishes">
+                <p class="cardRestaurant__borderTitlle">DESSERTS</p>
+                <div class="dishes__content">
                     <h4>Paris-Brest</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Revisité</p>
                         <p><strong>18€</strong></p>
                     </div>
                 </div>
-                <div class="entries__content">
+                <div class="dishes__content">
                     <h4>Macaron au chocolat d'exception</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Et glace à la vanille de Madagascar</p>
                         <p><strong>22€</strong></p>
                     </div>
                 </div>
-                <div class="entries__content">
+                <div class="dishes__content">
                     <h4>Mousse au chocolat</h4>
-                    <div class="entries__content--bloc">
+                    <div class="dishes__content--bloc">
                         <p>Au piment d'espelette et à la truffe noire</p>
                         <p><strong>23€</strong></p>
                     </div>
                 </div>
             </article>
-        </section>  
-        
+        </section> 
+
         <!--BUTTON-->
-        <button class="button">
-            <span class="button__text">Commander</span>
-        </button> 
+        <div class="Container__OrderButton">
+            <button class="button OrderButton--width">
+                <span class="button__text">Commander</span>
+            </button> 
+        </div>        
     </main>
 
      <!--FOOTER-->
      <footer class="ohmyfoodFooter">
-        <div class="ohmyfoodFooter__logo">
-            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood"></a>
+        <div>
+            <a href="#homeOhmyfood"><img src="images/ohmyfood_footer.png" alt="logo_ohmyfood" class="ohmyfoodFooter__logo"></a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-utensils"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Proposer un restaurant</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Proposer un restaurant</p>
             </a>
         </div>
-        <div class="ohmyfoodFooter__containerContent">
+        <div class="ohmyfoodFooter__Content">
             <i class="fas fa-hands-helping"></i>
             <a href="index_contact.html">
-                <h3 class="cardContent--Text">Devenir partenaire</h3>
+                <p class="ohmyfoodFooter__Content--color margeText">Devenir partenaire</p>
             </a>
         </div>
-        <a href="index_mentionsLegales.html">
-            <h3 class="cardContent--Text">Mentions légales</h3>
+        <a class="ohmyfoodFooter__link" href="index_mentionsLegales.html">
+            <p class="ohmyfoodFooter__Content--color">Mentions légales</p>
         </a>
-        <a href="index_contact.html">
-            <h3 class="cardContent--Text">Contact</h3>
+        <a class="ohmyfoodFooter__link" href="index_contact.html">
+            <p class="ohmyfoodFooter__Content--color">Contact</p>
         </a>
     </footer>
 </body>
