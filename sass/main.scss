@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
 }
 
 /*--COMPANY PRESENTATION--*/
-.containerOperation, .containerCompanyPresention {
+.containerFonctionnement, .containerCompanyPresention {
     display: flex;
     flex-direction: column;
 }
@@ -64,15 +64,15 @@ h1, h2, h3, h4 {
 }
 
 /*--OPERATION--*/
-.containerOperation{
+.containerFonctionnement{
     margin: 2rem 1rem 4rem 1rem;
 }
-.containerOperation__description, .containerOperation__bloc, .description__number {
+.containerFonctionnement__description, .description__number {
     display:flex; 
     align-items: center;
 }
 
-.containerOperation__description{
+.containerFonctionnement__description{
     margin-top: 1rem;
     background-color: #f2f2f2;
     border-radius: 1rem;
@@ -248,7 +248,7 @@ div p {
 
 div h4 {
     padding-top: 1rem;
-}
+}c
 
 .Container__OrderButton {
     display: flex;

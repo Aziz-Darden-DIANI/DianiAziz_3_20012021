@@ -1,0 +1,19 @@
+{
+  "name": "dianiaziz_3_20012021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aziz-Darden-DIANI/DianiAziz_3_20012021.git"
+  },
+  "author": "Diani Aziz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aziz-Darden-DIANI/DianiAziz_3_20012021/issues"
+  },
+  "homepage": "https://github.com/Aziz-Darden-DIANI/DianiAziz_3_20012021#readme"
+}
